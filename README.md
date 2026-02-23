@@ -1,0 +1,1 @@
+# Calculadora-de-Rescis-o-Trabalhista-2026-C-lculo-Online-e-Regras-CLT
