@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lucasfortunato10276-bot.github.io/Calculadora-de-Rescis-o-Trabalhista-2026-C-lculo-Online-e-Regras-CLT/sitemap.xml
