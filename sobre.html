@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós | Calculadora de Rescisão 2026</title>
+    <meta name="description" content="Conheça a missão da Calculadora de Rescisão 2026: oferecer clareza e precisão nos cálculos trabalhistas para todos os brasileiros.">
+    
+    <style>
+        /* Base do Design do Portal */
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #10b981;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+            --accent-color: #3b82f6;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 0 1rem;
+        }
+
+        header, main, footer {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--secondary-color); }
+
+        h1, h2, h3 { color: var(--primary-color); }
+        
+        h2 { 
+            margin-top: 2rem; 
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p { margin-bottom: 1.2rem; font-size: 1.05rem; }
+
+        .missao-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card-missao {
+            padding: 1.5rem;
+            background: #f1f5f9;
+            border-radius: 8px;
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* Animação */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: #e2e8f0;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .missao-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">← Calculadora</a></li>
+                <li><a href="privacidade.html">Privacidade</a></li>
+            </ul>
+        </nav>
+        <h1>Sobre a Calculadora de Rescisão 2026</h1>
+        <p>A tecnologia a serviço da transparência e do direito do trabalhador.</p>
+    </header>
+
+    <main>
+        <section class="reveal">
+            <h2>Nossa Missão</h2>
+            <p>Nascemos com o objetivo de democratizar o acesso à informação trabalhista. Em um cenário onde as leis e tabelas de impostos (como o <span class="highlight">novo IRRF 2026</span>) mudam constantemente, ter uma ferramenta confiável não é luxo, é necessidade.</p>
+            <p>Nossa plataforma foi desenvolvida para traduzir o "juridiquês" em números reais, ajudando milhares de brasileiros a planejarem suas transições de carreira com segurança e dignidade.</p>
+        </section>
+
+        <section class="missao-grid">
+            <div class="card-missao reveal">
+                <h3>Precisão Técnica</h3>
+                <p>Nossos algoritmos são atualizados mensalmente com base no Diário Oficial da União, garantindo que o <strong>salário mínimo de R$ 1.621,00</strong> e as novas alíquotas do INSS sejam aplicados com exatidão.</p>
+            </div>
+            <div class="card-missao reveal">
+                <h3>Independência</h3>
+                <p>Não possuímos vínculo com órgãos governamentais ou instituições bancárias. Somos um projeto independente focado 100% na experiência do usuário e na isenção de informações.</p>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <h2>Por que 2026 é um ano chave?</h2>
+            <p>Com a consolidação da Reforma Trabalhista e as novas regras de correção do FGTS pelo IPCA, o cálculo de rescisão tornou-se mais complexo. Nossa ferramenta foi pioneira em implementar essas variáveis de forma automatizada, permitindo que qualquer pessoa calcule seus direitos em segundos, sem precisar de planilhas complicadas.</p>
+        </section>
+
+        <section class="reveal">
+            <h2>Nossos Valores</h2>
+            <ul>
+                <li><strong>Transparência:</strong> Código aberto para conferência de lógica matemática.</li>
+                <li><strong>Privacidade:</strong> Nenhum dado financeiro sai do seu navegador.</li>
+                <li><strong>Educação:</strong> Mais que números, entregamos explicação sobre cada verba.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h4>Calculadora de Rescisão 2026</h4>
+            <p>Ajudando você a entender seus direitos desde o primeiro clique.</p>
+        </div>
+        <br>
+        <p>&copy; 2026 - Guia Trabalhador Independente.</p>
+    </footer>
+
+    <script>
+        // JS para efeito de revelação ao rolar a página
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+
+        // Dispara uma vez ao carregar para mostrar o que já está na tela
+        document.addEventListener('DOMContentLoaded', reveal);
+    </script>
+</body>
+</html>

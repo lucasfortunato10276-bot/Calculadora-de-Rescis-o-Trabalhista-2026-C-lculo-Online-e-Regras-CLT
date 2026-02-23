@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade | Calculadora de Rescisão 2026</title>
+    <meta name="description" content="Saiba como protegemos seus dados ao utilizar nossa calculadora trabalhista. Transparência e segurança de acordo com a LGPD.">
+    
+    <style>
+        /* Reutilizando sua identidade visual */
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #10b981;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --accent-color: #3b82f6;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 0 1rem;
+        }
+
+        header, main, footer {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--secondary-color); }
+
+        h1, h2 { color: var(--primary-color); margin-bottom: 1rem; }
+        
+        h2 { 
+            margin-top: 2rem; 
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        p { margin-bottom: 1rem; }
+
+        ul, ol { margin-left: 1.5rem; margin-bottom: 1rem; }
+
+        li { margin-bottom: 0.5rem; }
+
+        blockquote {
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem;
+            background: #eff6ff;
+            font-style: italic;
+            margin: 1.5rem 0;
+        }
+
+        .animar-entrada {
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: #e2e8f0;
+            text-align: center;
+        }
+
+        footer h4 { color: white; }
+        
+        footer a { color: #94a3b8; text-decoration: none; }
+    </style>
+</head>
+<body class="animar-entrada">
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">← Voltar para a Calculadora</a></li>
+            </ul>
+        </nav>
+        <h1>Política de Privacidade</h1>
+        <p>Sua segurança e privacidade são prioridades em nossa plataforma. Entenda como lidamos com seus dados em 2026.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Tratamento de Dados</h2>
+            <p>Ao utilizar a <strong>Calculadora de Rescisão 2026</strong>, você insere dados financeiros e trabalhistas. É importante destacar que:</p>
+            <ul>
+                <li><strong>Não armazenamos seus dados:</strong> Todos os cálculos são feitos via JavaScript diretamente no seu navegador.</li>
+                <li><strong>Privacidade por Design:</strong> Os valores inseridos não são enviados para nossos servidores.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Cookies e Analytics</h2>
+            <p>Utilizamos cookies mínimos para melhorar sua experiência:</p>
+            <blockquote>
+                Usamos ferramentas de análise (como Google Analytics) de forma anônima para entender quantas pessoas utilizam a calculadora e quais são as dúvidas mais comuns, ajudando-nos a melhorar o conteúdo.
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>3. Segurança das Informações</h2>
+            <p>Empregamos criptografia de ponta a ponta (HTTPS) para garantir que sua conexão com nosso site seja segura e livre de interceptações de terceiros.</p>
+        </section>
+
+        <section>
+            <h2>4. Responsabilidade</h2>
+            <p>Esta ferramenta fornece <strong>estimativas</strong> baseadas na legislação de 2026. Ela não substitui a consultoria de um contador ou advogado trabalhista. O uso dos resultados obtidos é de responsabilidade do usuário.</p>
+        </section>
+
+        <section id="data-atual">
+            </section>
+    </main>
+
+    <footer>
+        <div>
+            <h4>Calculadora de Rescisão 2026</h4>
+            <p>Conformidade com a LGPD e transparência total.</p>
+        </div>
+        <br>
+        <p>&copy; 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // JS Interno para dinamismo simples
+        document.addEventListener('DOMContentLoaded', () => {
+            const dataSecao = document.getElementById('data-atual');
+            const dataHoje = new Date().toLocaleDateString('pt-BR');
+            dataSecao.innerHTML = `<p><em>Esta política foi revisada e é válida para o acesso realizado em: <strong>${dataHoje}</strong>.</em></p>`;
+            
+            console.log("Página de privacidade carregada com segurança.");
+        });
+    </script>
+</body>
+</html>

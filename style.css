@@ -1,0 +1,256 @@
+/* Configurações Gerais e Variáveis */
+:root {
+    --primary-color: #1e3a8a; /* Azul Marinho Profissional */
+    --secondary-color: #10b981; /* Verde Sucesso/Dinheiro */
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+    --accent-color: #3b82f6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 0 1rem;
+}
+
+/* Layout e Container */
+header, main, footer {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* Tipografia */
+h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+h3 {
+    margin: 1.5rem 0 0.5rem;
+    color: var(--text-color);
+}
+
+p { margin-bottom: 1rem; }
+
+/* Formulário da Calculadora */
+#calculadora {
+    background: linear-gradient(to bottom right, #ffffff, #eff6ff);
+    border: 1px solid var(--border-color);
+}
+
+fieldset {
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    grid-column: span 2;
+    color: var(--primary-color);
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+button {
+    grid-column: span 2;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #ecfdf5;
+    border-left: 5px solid var(--secondary-color);
+    border-radius: 4px;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+}
+
+td {
+    padding: 0.8rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+tr:nth-child(even) { background-color: #f1f5f9; }
+
+/* FAQ e Glossário */
+details {
+    background: #f1f5f9;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+summary {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+blockquote {
+    border-left: 4px solid var(--accent-color);
+    padding: 1rem;
+    background: #eff6ff;
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--primary-color);
+    color: #e2e8f0;
+    text-align: center;
+}
+
+footer h4 { color: white; margin-bottom: 1rem; }
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+footer a { color: #94a3b8; text-decoration: none; font-size: 0.8rem; }
+
+/* Responsividade */
+@media (max-width: 600px) {
+    fieldset { grid-template-columns: 1fr; }
+    legend, button { grid-column: span 1; }
+    header, main, footer { padding: 1rem; }
+}
+/* Garante que o resultado comece invisível e ganhe vida */
+#resultado {
+    display: none; /* Começa escondido */
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--secondary-color);
+}
+
+/* Classe que o JS vai injetar */
+.resultado-ativo {
+    display: block !important;
+    animation: surgindo 0.8s ease-out forwards;
+}
+
+@keyframes surgindo {
+    from { 
+        opacity: 0; 
+        transform: translateY(30px) scale(0.95); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0) scale(1); 
+    }
+}
+
+/* O fundo animado suave */
+.bg-fluxo {
+    background: linear-gradient(270deg, #ffffff, #f0fdf4, #dcfce7);
+    background-size: 600% 600%;
+    animation: moverGradiente 8s ease infinite;
+}
+
+@keyframes moverGradiente {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+}

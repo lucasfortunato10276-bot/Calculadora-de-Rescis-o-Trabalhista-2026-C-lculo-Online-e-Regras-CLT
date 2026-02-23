@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Calculadora de Rescisão 2026</title>
+    <meta name="description" content="Entre em contato com a equipe da Calculadora de Rescisão 2026. Tire suas dúvidas sobre cálculos trabalhistas e sugestões.">
+    
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #10b981;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 0 1rem;
+        }
+
+        header, main, footer {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul { list-style: none; display: flex; gap: 1.5rem; margin-bottom: 1.5rem; }
+        nav a { text-decoration: none; color: var(--primary-color); font-weight: 600; }
+
+        h1, h2 { color: var(--primary-color); margin-bottom: 1rem; }
+
+        .form-group { margin-bottom: 1.5rem; }
+        
+        label { display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--primary-color); }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+        }
+
+        button {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover { background-color: #1e40af; transform: translateY(-2px); }
+
+        /* Animação de Sucesso */
+        #msg-sucesso {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+            background: #dcfce7;
+            color: #166534;
+            border-radius: 8px;
+            margin-top: 1rem;
+            animation: bounceIn 0.5s ease;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.9); opacity: 0; }
+            70% { transform: scale(1.05); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        footer { text-align: center; background: var(--primary-color); color: white; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">← Calculadora</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+        <h1>Fale Conosco</h1>
+        <p>Tem alguma dúvida sobre o cálculo ou encontrou algum erro? Nossa equipe está pronta para ajudar.</p>
+    </header>
+
+    <main>
+        <form id="contatoForm">
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail Corporativo ou Pessoal</label>
+                <input type="email" id="email" name="email" placeholder="email@exemplo.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="assunto">Assunto</label>
+                <select id="assunto" name="assunto">
+                    <option value="duvida">Dúvida sobre o Cálculo</option>
+                    <option value="erro">Reportar Erro no Sistema</option>
+                    <option value="parceria">Parcerias e Anúncios</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Sua Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva como podemos ajudar..." required></textarea>
+            </div>
+
+            <button type="submit" id="btnEnviar">Enviar Mensagem</button>
+        </form>
+
+        <div id="msg-sucesso">
+            <h3>✅ Mensagem Enviada!</h3>
+            <p>Obrigado pelo contato. Responderemos em até 48 horas úteis.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Calculadora de Rescisão Trabalhista Profissional.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contatoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const btn = document.getElementById('btnEnviar');
+            const msg = document.getElementById('msg-sucesso');
+            const form = document.getElementById('contatoForm');
+
+            // Simulação de carregamento
+            btn.innerText = "Enviando...";
+            btn.style.opacity = "0.7";
+            btn.style.cursor = "not-allowed";
+
+            setTimeout(() => {
+                form.style.display = "none";
+                msg.style.display = "block";
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

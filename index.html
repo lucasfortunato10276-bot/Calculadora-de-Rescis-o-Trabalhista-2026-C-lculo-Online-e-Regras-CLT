@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Rescisão Trabalhista 2026 | Cálculo Online e Regras CLT</title>
+    <meta name="description" content="Calcule sua rescisão trabalhista com as regras de 2026. Inclui novo salário mínimo de R$ 1.621, novo IRRF, multa de FGTS, 13º e férias proporcionais.">
+    <meta name="keywords" content="calculadora rescisão 2026, cálculo trabalhista, CLT 2026, direitos trabalhistas, multa FGTS, novo salário mínimo">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#calculadora">Calculadora</a></li>
+                <li><a href="#direitos">Seus Direitos</a></li>
+                <li><a href="#tabela-comparativa">Tabela de Verbas</a></li>
+                <li><a href="#regras-2026">Mudanças 2026</a></li>
+                <li><a href="#faq">Dúvidas Frequentes</a></li>
+            </ul>
+        </nav>
+        <h1>Calculadora de Rescisão Trabalhista Atualizada 2026</h1>
+        <p>Simule seus valores de forma precisa com base na legislação vigente, incluindo as novas faixas de isenção de IR e o salário mínimo de <strong>R$ 1.621,00</strong>.</p>
+    </header>
+
+    <main>
+        <section id="calculadora">
+            <h2>Simule sua Rescisão</h2>
+            <p>Preencha os campos abaixo para obter uma estimativa detalhada das suas verbas rescisórias.</p>
+            <form id="rescisaoForm">
+                <fieldset>
+                    <legend>Informações do Contrato</legend>
+                    
+                    <label for="salarioBruto">Salário Bruto (R$):</label>
+                    <input type="number" id="salarioBruto" name="salarioBruto" placeholder="Ex: 3500.00" required>
+
+                    <label for="dataInicio">Data de Admissão:</label>
+                    <input type="date" id="dataInicio" name="dataInicio" required>
+
+                    <label for="dataFim">Data de Afastamento:</label>
+                    <input type="date" id="dataFim" name="dataFim" required>
+
+                    <label for="motivo">Motivo da Saída:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="semJustaCausa">Demissão sem Justa Causa</option>
+                        <option value="pedidoDemissao">Pedido de Demissão</option>
+                        <option value="justaCausa">Demissão com Justa Causa</option>
+                        <option value="acordo">Acordo Comum (Reforma Trabalhista)</option>
+                    </select>
+
+                    <label for="avisoPrevio">Aviso Prévio:</label>
+                    <select id="avisoPrevio" name="avisoPrevio">
+                        <option value="trabalhado">Trabalhado</option>
+                        <option value="indenizado">Indenizado</option>
+                        <option value="dispensado">Dispensado/Não cumprido</option>
+                    </select>
+
+                    <label for="dependentes">Número de Dependentes:</label>
+                    <input type="number" id="dependentes" name="dependentes" value="0">
+
+                    <label for="feriasVencidas">Possui Férias Vencidas?</label>
+                    <input type="checkbox" id="feriasVencidas" name="feriasVencidas">
+                </fieldset>
+
+                <button type="button">Calcular Rescisão Agora</button>
+            </form>
+
+            <div id="resultado">
+                <h3>Resumo do Cálculo</h3>
+                <p>Os valores detalhados aparecerão aqui após clicar em calcular.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="direitos">
+            <h2>Quais são os direitos na rescisão em 2026?</h2>
+            <p>Ao encerrar um contrato de trabalho sob regime CLT, o trabalhador tem direito a diversas verbas. O valor final depende diretamente do motivo do desligamento e do tempo de serviço.</p>
+            
+            <h3>Principais Verbas Rescisórias:</h3>
+            <ul>
+                <li><strong>Saldo de Salário:</strong> Pagamento pelos dias trabalhados no mês da saída.</li>
+                <li><strong>13º Salário Proporcional:</strong> Fração do décimo terceiro correspondente aos meses trabalhados no ano corrente (considera-se mês integral a partir de 15 dias trabalhados).</li>
+                <li><strong>Férias Proporcionais + 1/3:</strong> Direito constitucional sobre o período aquisitivo incompleto, acrescido de um terço do valor.</li>
+                <li><strong>Multa do FGTS:</strong> Em demissões sem justa causa, o empregador paga 40% sobre o total depositado. Em acordos, a multa é de 20%.</li>
+            </ul>
+        </section>
+
+        <section id="tabela-comparativa">
+            <h2>Comparativo de Verbas por Tipo de Demissão</h2>
+            <p>Confira o que você recebe em cada modalidade de desligamento em 2026:</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Verba Rescisória</th>
+                        <th>Sem Justa Causa</th>
+                        <th>Pedido de Demissão</th>
+                        <th>Justa Causa</th>
+                        <th>Acordo Comum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Saldo de Salário</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>13º Proporcional</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Não</td>
+                        <td>Sim (50%)</td>
+                    </tr>
+                    <tr>
+                        <td>Férias + 1/3</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>Apenas Vencidas</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>Saque FGTS</td>
+                        <td>Sim</td>
+                        <td>Não</td>
+                        <td>Não</td>
+                        <td>Sim (80% do saldo)</td>
+                    </tr>
+                    <tr>
+                        <td>Multa FGTS</td>
+                        <td>40%</td>
+                        <td>Não</td>
+                        <td>Não</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>Seguro-Desemprego</td>
+                        <td>Sim</td>
+                        <td>Não</td>
+                        <td>Não</td>
+                        <td>Não</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="regras-2026">
+            <h2>O que mudou na legislação em 2026?</h2>
+            <p>O cenário trabalhista de 2026 trouxe atualizações que impactam diretamente o bolso do trabalhador brasileiro:</p>
+            <article>
+                <h3>1. Novo Salário Mínimo e Teto do INSS</h3>
+                <p>Com o salário mínimo fixado em <strong>R$ 1.621,00</strong>, o valor base para cálculos de seguro-desemprego, abono salarial e recolhimentos mínimos foi reajustado.</p>
+            </article>
+            <article>
+                <h3>2. Isenção de Imposto de Renda (IRRF)</h3>
+                <p>A nova política de isenção para quem ganha até R$ 5.000,00 utiliza um mecanismo de desconto simplificado. Isso significa que, para a maioria dos trabalhadores CLT, a retenção de IR na rescisão será inexistente ou significativamente menor comparado a anos anteriores.</p>
+            </article>
+        </section>
+
+        <section id="guia-fgts">
+            <h2>FGTS e a Multa Rescisória em 2026</h2>
+            <p>O Fundo de Garantia do Tempo de Serviço é um patrimônio do trabalhador. Em 2026, o rendimento do FGTS segue a decisão do STF que garante que a correção anual nunca seja inferior à inflação (IPCA).</p>
+            <article>
+                <h3>Como calcular a multa de 40%?</h3>
+                <p>A multa incide sobre o <strong>valor total depositado</strong> pela empresa durante todo o contrato, devidamente corrigido, e não sobre o saldo que aparece no seu aplicativo (caso você tenha feito saques-aniversário ou saques emergenciais).</p>
+                <blockquote>
+                    <strong>Exemplo Prático:</strong> Se a empresa depositou um total histórico de R$ 10.000,00, sua multa de 40% será de R$ 4.000,00, independentemente de quanto você já sacou da conta.
+                </blockquote>
+            </article>
+        </section>
+
+        <section id="descontos-rescisao">
+            <h2>Quais descontos podem aparecer no seu termo?</h2>
+            <p>A empresa tem o direito legal de aplicar descontos específicos no TRCT (Termo de Rescisão do Contrato de Trabalho):</p>
+            <ul>
+                <li><strong>INSS:</strong> Desconto previdenciário progressivo sobre saldo de salário e 13º.</li>
+                <li><strong>IRRF:</strong> Imposto de Renda Retido na Fonte, respeitando as novas faixas de 2026.</li>
+                <li><strong>Vale-Transporte/Alimentação:</strong> Estorno proporcional aos dias não trabalhados caso tenham sido pagos antecipadamente.</li>
+                <li><strong>Aviso Prévio:</strong> Se você pediu demissão e não cumpriu o aviso, a empresa pode descontar o valor correspondente a um salário.</li>
+            </ul>
+        </section>
+
+        <section id="passo-a-passo">
+            <h2>Passo a Passo após a Demissão</h2>
+            <ol>
+                <li><strong>Exame Demissional:</strong> Deve ser realizado para atestar a saúde do colaborador no encerramento do ciclo.</li>
+                <li><strong>Assinatura do TRCT:</strong> Documento que detalha cada verba. Verifique valores antes de assinar.</li>
+                <li><strong>Baixa na CTPS Digital:</strong> O registro de saída deve constar no sistema do eSocial em até 10 dias.</li>
+                <li><strong>Saque e Seguro:</strong> Utilize o código de saque do FGTS e o requerimento do seguro-desemprego (se houver direito).</li>
+            </ol>
+        </section>
+
+        <section id="glossario">
+            <h2>Glossário de Termos Trabalhistas</h2>
+            <dl>
+                <dt><strong>Período Aquisitivo:</strong></dt>
+                <dd>Cada 12 meses de trabalho que dão direito a férias.</dd>
+                
+                <dt><strong>Período Concessivo:</strong></dt>
+                <dd>Os 12 meses seguintes ao período aquisitivo, onde o patrão deve conceder o descanso.</dd>
+                
+                <dt><strong>Homologação:</strong></dt>
+                <dd>O ato de validar a rescisão. Pode ocorrer na própria empresa ou, em alguns casos, no sindicato.</dd>
+            </dl>
+        </section>
+
+        <section id="faq">
+            <h2>Perguntas Frequentes (FAQ)</h2>
+            <details>
+                <summary>Quanto tempo a empresa tem para pagar a rescisão em 2026?</summary>
+                <p>O prazo para pagamento das verbas rescisórias é de até <strong>10 dias corridos</strong> após o término do contrato, independentemente do tipo de aviso prévio.</p>
+            </details>
+            <details>
+                <summary>Como funciona o aviso prévio proporcional?</summary>
+                <p>São 30 dias garantidos, mais 3 dias para cada ano completo de empresa, com um limite máximo de 90 dias totais.</p>
+            </details>
+            <details>
+                <summary>Pedi demissão, tenho direito ao FGTS?</summary>
+                <p>No pedido de demissão comum, você não pode sacar o FGTS nem recebe a multa de 40%. O saldo permanece na conta para uso em moradia própria ou aposentadoria.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h4>Calculadora de Rescisão 2026</h4>
+            <p>Ferramenta educacional para simulação de direitos trabalhistas. Sempre consulte um contador ou o seu sindicato para valores oficiais.</p>
+        </div>
+        <hr>
+        <div>
+            <p>&copy; 2026 - Guia do Trabalhador - Todos os direitos reservados.</p>
+            <ul>
+                <li><a href="politica.html">Política de Privacidade</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
